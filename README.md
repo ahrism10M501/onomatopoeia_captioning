@@ -24,21 +24,21 @@
 
 본 프로젝트는 AI-hub의 공개 데이터셋 이미지 '[사운드 매칭 데이터][데이터 참조 링크]'를 사용하였다.
 
-> 학습 데이터 (11종)
-> 국 끓이기, 면 끓이기, 고구마 튀기기, 닭고기 굽기, 냉장고 작동하기, 당근 썰기, 헤어드라이어 작동하기, 사과 썰기, 전기압력밥솥 사용하기, 믹서기 사용 야채 갈기, 전자레인지 작동하기
+학습 데이터 (11종)   
+ * 국 끓이기, 면 끓이기, 고구마 튀기기, 닭고기 굽기, 냉장고 작동하기, 당근 썰기, 헤어드라이어 작동하기, 사과 썰기, 전기압력밥솥 사용하기, 믹서기 사용 야채 갈기, 전자레인지 작동하기   
 
-> 사용 클래스 (9종)
-> 굽기, 끓이기, 냉장고 사용, 드라이어 사용, 믹서기 사용, 썰기, 압력밥솥 사용, 전자레인지 사용, 튀기기
+사용 클래스 (9종)   
+ * 굽기, 끓이기, 냉장고 사용, 드라이어 사용, 믹서기 사용, 썰기, 압력밥솥 사용, 전자레인지 사용, 튀기기   
 
-데이터셋/
-├── 오디오셋/
-│   ├── train/
-│   ├── valid/
-│   └── test/
-├── 비디오셋/
-│   ├── train/
-│   ├── valid/
-│   └── test/
+데이터셋/   
+├── 오디오셋/   
+│   ├── train/   
+│   ├── valid/   
+│   └── test/   
+├── 비디오셋/   
+│   ├── train/   
+│   ├── valid/   
+│   └── test/   
 
 > 모든 Python 파일 내 root_path 를 해당 경로에 맞게 설정해주세요.
 
@@ -47,14 +47,12 @@
 프로젝트에 사용된 오디오 모델을 정리한 파일입니다.   
 ResNet 구조를 기반으로 만든 모델, Train, Test와 의성어 어노테이션을 만들기 위해 어떻게 k-means를 했는지 기록되어있습니다.
 
-이외 모델 후보였던 YAMNet의 학습 및 테스트도 업로드 되어있습니다.
-
-각 Python 파일의 root_path를 데이터셋/오디오셋 위치로 맞추세요.
+이 외 모델 후보였던 YAMNet의 학습 및 테스트도 업로드 되어있습니다.
 
 ## Video Model
 
 프로젝트에 사용된 비디오 모델을 정리한 파일입니다.
-ResNet 구조를 기반으로 만든 모델과 SSD, YOLO의 학습 및 테스트를 위한 Python 파일들입니다. YOLO를 학습 및 테스트를 하기 위해서는 먼저 YOLO_data_prepare를 root_path=데이터셋/비디오셋 위치로 설정한 후 실행하세요.
+ResNet 구조를 기반으로 만든 모델과 SSD, YOLO의 학습 및 테스트를 위한 Python 파일들입니다. YOLO를 학습 및 테스트를 하기 위해서는 먼저 YOLO_data_prepare를 root_path = 데이터셋/비디오셋 위치로 설정한 후 실행하세요.
 
 ## PROJECT
 
@@ -63,8 +61,6 @@ sub_animation Python 파일은 opencv 환경에서 동작하는 간단한 애니
 somatch Python 파일은 해당 프로젝트를 구현한 스크립트 입니다. video 모델로 bbox를 예측하고, audio 모델로 의성어를 예측한 뒤 bbox 내부 무작위의 위치헤서 sub_animation의 효과가 가미된 자막을 출력합니다.
 
 ## 가중치
-각 모델에 필요한 가중치는 [여기][가중치]에서 다운로드 받으세요.
+각 모델에 필요한 가중치는 [여기](https://drive.google.com/file/d/1U7TjMUC3QkvrmFGCcWeHleAV65cg7e8C/view?usp=sharing) 에서 다운로드 받으세요.
 
-
- [데이터 참조 링크]: https://www.aihub.or.kr/aihubdata/data/view.do?searchKeyword=%EC%9D%B4%EB%AF%B8%EC%A7%80+%EC%82%AC%EC%9A%B4%EB%93%9C&aihubDataSe=data&dataSetSn=71602
- [기증치] : https://drive.google.com/file/d/1U7TjMUC3QkvrmFGCcWeHleAV65cg7e8C/view?usp=sharing
+[데이터 참조 링크]: https://www.aihub.or.kr/aihubdata/data/view.do?searchKeyword=%EC%9D%B4%EB%AF%B8%EC%A7%80+%EC%82%AC%EC%9A%B4%EB%93%9C&aihubDataSe=data&dataSetSn=71602

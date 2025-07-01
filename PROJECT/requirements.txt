@@ -1,0 +1,6 @@
+numpy
+torch
+torchaudio
+sounddevice
+opencv-python
+ultralytics

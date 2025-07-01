@@ -1,0 +1,1 @@
+{"params": {"epoch": 100, "batch": 4, "accum": 8, "lr": 0.0001, "eta_min": 1e-06, "label_smoothing": 0.1}, "best_label_acc": 90.9090909090909, "best_ono_acc": 95.45454545454545}

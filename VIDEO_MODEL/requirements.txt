@@ -1,0 +1,8 @@
+torch
+torchvision
+albumentations
+tqdm
+pycocotools
+sklearn
+matplotlib
+ultralytics

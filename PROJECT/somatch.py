@@ -20,8 +20,8 @@ import sub_animation as anim # 사용자 정의 텍스트 애니메이션 모듈
 NUM_CLASS = 9 # 인식할 비디오, 오디오 물체 수
 NUM_ONO = 9 # 의성어 수
 
-VIDEO_WEIGHT = "models/runs/detect/train4/weights/best.pt"
-AUDIO_WEIGHT = "models/best_model2.pth"
+VIDEO_WEIGHT = "models/video_m.pt"
+AUDIO_WEIGHT = "models/audio.pth"
 VERBOSE = False # YOLOv8 모델 verbose 모드
 RETRY_NUM = 5 # 모델 가중치 로드 재시도 횟수
 

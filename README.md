@@ -1,8 +1,8 @@
 ## Authors
-- 조예원 (팀장. joyewon1212) 
-- 심현화 () 
-- 이다민 (프로그래머, ahrism10M501)
-- 정의현 ()
+- 조예원 (joyewon1212) 
+- 심현화 (PeacemakerHH) 
+- 이다민 (ahrism10M501)
+- 정의현 (djeong000)
 
 
 # **onomatopoeia_captioning**

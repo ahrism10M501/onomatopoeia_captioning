@@ -48,7 +48,7 @@ for idx in range(0, 9):
     ono = ono_map.get(idx)
     print(f"\n▶ 클러스터 {idx}: {ono} 라벨링 중...")
 
-    clustered_data = glob.glob(f"{data_root_path}/clustering/cluster_{idx}/*.wav")
+    clustered_data = glob.glob(f"{root_path}/clustering/cluster_{idx}/*.wav")
     data_pair = DataCollector(clustered_data, labels)
 
     for annot_list, audio_path in tqdm(data_pair):

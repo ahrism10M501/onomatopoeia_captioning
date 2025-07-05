@@ -22,7 +22,6 @@ from tqdm import tqdm
 from data_collector import DataCollector
 
 # Set Data Paths
-
 root_path = ''
 
 image_data = glob.glob(f"{root_path}\\train\\image\\**\\*.jpg", recursive=True)
